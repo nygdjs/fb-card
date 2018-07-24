@@ -1,0 +1,50 @@
+{
+    "name": "facebook-card",
+    "version": "1.0.0",
+    "description": "Facebook post card in good ol' plain HTML and CSS.",
+    "main": "index.html",
+    "private": true,
+    "license": "UNLICENSED",
+    "author": "hello@norbert-toth.me",
+    "browserslist": [
+        "last 2 Chrome versions",
+        "last 2 Firefox versions",
+        "last 2 Edge versions",
+        "last 2 Safari versions",
+        "last 2 iOS major versions",
+        "last 2 ChromeAndroid versions"
+    ],
+    "lint-staged": {
+        "*.{png,jpeg,jpg,gif,svg}": "imagemin-lint-staged",
+        "*.{css}": [
+            "stylelint"
+        ]
+    },
+    "prettier": {
+        "singleQuote": true,
+        "tabWidth": 4,
+        "trailingComma": "all"
+    },
+    "scripts": {
+        "cleanup": "rm yarn.lock; rm package-lock.json; rm -rf node_modules",
+        "lint:css": "stylelint './styles/**/*.css'",
+        "precommit": "lint-staged",
+        "reboot": "npm run cleanup; npm install",
+        "start": "browser-sync start --server --files './'"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "browser-sync": "^2.24.6",
+        "husky": "^0.14.3",
+        "imagemin-lint-staged": "^0.3.0",
+        "lint-staged": "^7.2.0",
+        "stylelint-config-standard": "^18.2.0",
+        "stylelint-no-unsupported-browser-features": "^3.0.1",
+        "stylelint-order": "^0.8.1",
+        "stylelint": "^9.3.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/nygdjs/fb-card"
+    }
+}
