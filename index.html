@@ -18,11 +18,125 @@
     <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
+    <link rel="stylesheet" href="styles/lib/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
-    <h1>HELLO WORLD</h1>
+    <main class="fb-card">
+        <header class="fb-card__header">
+            <div class="media-object">
+                <a class="fb-card__avatar media-object__figure" href="https://www.facebook.com/react/" target="blank">
+                    <img src="images/avatar_react.png" alt="Publisher user avatar.">
+                </a>
+                <div class="fb-card__publish__details media-object__body">
+                    <a class="fb-card__publish__user-name" href="https://www.facebook.com/react/" target="blank">React</a>
+                    <p class="fb-card__publish__date">
+                        <a href="https://www.facebook.com/react/posts/1141865535891852" target="blank">
+                            <time>2016. december 7.</time>
+                        </a>
+                        <span>·</span>
+                        <span role="img" aria-label="An icon of a globe." class="fb-icon fb-icon--globe"></span>
+                    </p>
+                </div>
+            </div>
+            <p class="fb-card__publish__description">Upgrading your project to use a newer version of React Native is now easier than ever! React Native now uses Git to resolve
+            any conflicts during the upgrade process.</p>
+        </header>
+        <section class="fb-card__body">
+            <a href="https://facebook.github.io/react-native/blog/2016/12/05/easier-upgrades.html" target="blank">
+                <figure class="fb-card__body__image">
+                    <figcaption class="fb-card__body__details">
+                        <h4 class="fb-card__body__title">Easier Upgrades Thanks to Git</h4>
+                        <p class="fb-card__body__text">Upgrading to new versions of React Native has been difficult. You might have seen something like this before:</p>
+                        <h5 class="fb-card__body__url">facebook.github.io</h5>
+                        <button class="fb-card__body__button">További információ</button>
+                    </figcaption>
+                </figure>
+            </a>
+        </section>
+        <section class="fb-card__interactions">
+            <a class="fb-card__interactions__item" href="#">
+                <span role="img" aria-label="Facebook like icon, a hand thumbs up." class="fb-icon fb-icon--like"></span>Tetszik</a>
+            <a class="fb-card__interactions__item" href="#">
+                <span role="img" aria-label="Comment icon, speech bubble." class="fb-icon fb-icon--comment"></span>Hozzászólás</a>
+            <a class="fb-card__interactions__item" href="#">
+                <span role="img" aria-label="Share icon." class="fb-icon fb-icon--share"></span>Megosztás</a>
+            <a class="fb-card__interactions--personal" href="#">
+                <img class="fb-card__avatar small" src="images/avatar_benestudio.png" alt="Avatar of the logged in user.">
+                <i class="fa fa-caret-down"></i>
+            </a>
+        </section>
+
+        <section class="fb-card__comment-box">
+            <div class="fb-card__reactions">
+                <a class="fb-card__reactions__item" href="#">
+                    <img class="fb-icon" src="images/icons/icon_like.svg">
+                </a>
+                <a class="fb-card__reactions__item" href="#">
+                    <img class="fb-icon" src="images/icons/icon_heart.png">
+                </a>
+                <a class="fb-card__reactions__item" href="#">
+                    <img class="fb-icon" src="images/icons/icon_wow.svg">
+                </a>
+                <a class="fb-card__reactions__wholiked" href="#">Balaji Krishnan, Fabi Ferreira és további 143 ember</a>
+                
+                <div class="fb-card__reactions--best">
+                    <a class="fb-card__reactions--best" href="#">A legérdekesebbek
+                        <span class="fb-icon"></span>
+                    </a>
+                </div>
+            </div>
+
+            <hr/>
+            <a class="fb-card__share-count" href="#">6 megosztás</a>
+            
+            <div class="fb-card__comments">
+                <div class="input-comment">
+                    <img class="fb-card__avatar small" src="images/avatar_benestudio.png" alt="Avatar of the logged in user.">
+                    <div class="fb-card-input-box">
+                        <input class="fb-card-input" type="text" placeholder="Hozzászólás írása...">
+                        <a class="comment-box-icons" href="#">
+                            <i class="fa fa-smile-o"></i>
+                        </a>
+                        <a class="comment-box-icons" href="#">
+                            <i class="fa fa-camera"></i>
+                        </a>
+                        <a class="comment-box-icons" href="#">
+                            <i class="fa fa-image"></i>
+                        </a>
+                    </div>
+                    <p>A közzétételhez nyomd le az Enter billentyűt.</p>
+                </div>
+
+                <div class="fb-card-users-comments">
+                    <a class="fb-card-user-image" href="https://www.facebook.com/majoo.strada.7?fref=ufi&rc=p" target="blank">
+                        <img class="fb-card__avatar small" src="images/avatar_benestudio.png" alt="Avatar of the logged in user.">
+                    </a>
+                    <div class="comments">
+                        <div class="comment-content">
+                            <div class="text">
+                                <p class="facebook-comment">
+                                    <a class="fb-card-content-user" href="https://www.facebook.com/xiaochang.di?fref=ufi&rc=p" target="blank">Xiao Chang Di</a>
+                                    I'm a developer from China. We're using React at the moment. I'd like to ask if we're a small company that doesn't involve
+                                    competition with feacbook. Can we use React safely?
+                                </p>
+                                <p class="reaction-buttons">
+                                    <a class="facebook-card-comment-option" href="#">Tetszik</a>·
+                                    <a class="facebook-card-comment-option" href="#">Válasz</a>·
+                                    <a class="facebook-card-comment-date" href="#">33 hete</a>
+                                </p>
+                            </div>
+                            <p class="answer">
+                                <a class="fb-card-comment-option" href="#">
+                                    <i class="fa fa-share"></i>1 válasz</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
